@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Flap Game With Js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="control-buttons">
+        <span>Start Game</span>
+    </div>
+<div class="info-container">
+    <div class="name" style="font-weight: 600; color: rgb(41, 41, 23);">
+        Hello, <span></span>
+    </div>
+    <div class="tries">
+        Wrong Tries: <span>0</span>
+    </div>
+</div>
+<div class="game-blocks-container">
+    <!-- Block 1 -->
+    <div class="game-block" data-number="imageOne">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-skull-crossbones" ></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageOne">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-skull-crossbones"></i>
+        </div>
+    </div>
+    <!-- Block 2 -->
+    <div class="game-block " data-number="imageTwo">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageTwo">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </div>
+    <!-- Block 3 -->
+    <div class="game-block" data-number="imageThree">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-hand-fist"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageThree">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-hand-fist"></i>
+        </div>
+    </div>
+    <!-- Block 4 -->
+    <div class="game-block" data-number="imageFour">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-chess-knight"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageFour">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-chess-knight"></i>
+        </div>
+    </div>
+    <!-- Block 5 -->
+    <div class="game-block" data-number="imageFive">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-book-skull"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageFive">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-book-skull"></i>
+        </div>
+    </div>
+    <!-- Block 6 -->
+    <div class="game-block" data-number="imageSix">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dragon"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageSix">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dragon"></i>
+        </div>
+    </div>
+    <!-- Block 7 -->
+    <div class="game-block" data-number="imageSeven">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dice-four"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageSeven">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dice-four"></i>
+        </div>
+    </div>
+    <!-- Block 8 -->
+    <div class="game-block" data-number="imageEight">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dice-six"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageEight">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-dice-six"></i>
+        </div>
+    </div>
+    <!-- Block 9 -->
+    <div class="game-block" data-number="imageNine">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-chess-rook"></i>
+        </div>
+    </div>
+    <div class="game-block" data-number="imageNine">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-chess-rook"></i>
+        </div>
+    </div>
+    <!-- Block 10 -->
+    <div class="game-block" data-number="imageTen">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-ring"></i>
+
+        </div>
+    </div>
+    <div class="game-block" data-number="imageTen">
+        <div class="face front"></div>
+        <div class="face back">
+            <i class="fa-solid fa-ring"></i>
+        </div>
+    </div>
+    
+</div>
+ <audio id="success" src="/mixkit-arcade-bonus-alert-767.wav" preload="auto"></audio>
+ <audio id="fail" src="/mixkit-fairy-cartoon-success-voice-344.wav" preload="auto"></audio>
+ <audio id="congrat" src="/mixkit-medieval-show-fanfare-announcement-226.wav" preload="auto"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
